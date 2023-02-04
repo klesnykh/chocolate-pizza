@@ -95,6 +95,14 @@ main > section {
   min-height: 305px;
 }
 
+.bottomLine{
+  display: block;
+  height: 1rem;
+  background-image: url("../img/hr-img.png");
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .listPic {
   position:absolute;
   z-index: -1;
