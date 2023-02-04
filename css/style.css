@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -8,47 +12,77 @@ header {
   width: 900px;
 }
 
+
 h1 {
-  border: solid black 1px;
   font-size: 2rem;
+  font-weight: bold;
+  font-family: cursive;
 }
 
 .top {
-  border: solid black 1px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+.top div {
+  display: flex;
+  width: 8%;
+  align-items: center;
+  margin-bottom: 3px;
+  color: gray;
+}
+
+.top div:hover {
+  cursor: pointer;
+}
+
+.top div img{
+  height: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .bottom {
-  border: solid black 1px;
   display: block;
+  height: 1rem;
+  background-image: url("../img/hr-img.png");
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .left {
-  border: solid black 1px;
   display: flex;
   align-items: center;
 }
 
-.left section {
-  display: flex;
-  flex-direction: column`;
+.left:hover{
+  cursor: pointer;
+}
+
+.left img{
+  float: left;
 }
 
 .left p {
-  font-size: small;
+  font-size:x-small;
 }
 
 .right {
-  border: solid black 1px;
   display: flex;
   align-items: center;
+}
+
+.right ul {
+  display: flex;
 }
 
 main {
   position:relative;
   margin: auto;
-  border: solid black 1px;
   width: 900px;
 }
 
@@ -57,26 +91,32 @@ main > section {
 }
 
 .checkbox {
-  border: solid black 1px;
   position: relative;
   min-height: 305px;
 }
 
 .listPic {
-  border: solid black 1px;
   position:absolute;
   z-index: -1;
 }
 
 .container {
-  border: solid black 1px;
   position: absolute;
   z-index: 1;
+  width: 100%;
+  columns: 2;
+  column-gap: 2rem;
+  padding: 3rem;
+}
+
+label {
+  display: block;
 }
 
 .mainBottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .mainBottom section {
@@ -95,13 +135,11 @@ main > section {
 
 footer { 
   margin: auto;
-  border: solid black 1px;
   width: 900px;
   text-align: center;
 }
 
 ul {
-  border: solid black 1px;
   list-style: none;
   display: flex;
 }
